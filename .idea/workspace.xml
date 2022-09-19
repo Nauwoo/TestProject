@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3c4c5d3-1ad2-43e5-82de-5f7ea00538d4" name="Changes" comment="second commit">
+    <list default="true" id="a3c4c5d3-1ad2-43e5-82de-5f7ea00538d4" name="Changes" comment="third commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestProject/com/max/idea/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestProject/com/max/idea/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/max/idea/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/max/idea/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663598393816</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third commit">
+      <created>1663601543726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663601543726</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +93,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
 </project>
