@@ -3,7 +3,73 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner inDouble = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
+        System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
+        int x = in.nextInt();
+        if (x == 1)
+            System.out.println("Выберите единицу измерения: 1 - тонна, 2 - килограмм, 3 - грамм");
+        else
+            System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");
+        int y = in.nextInt();
+        System.out.println("Введите число: ");
+        double z = in.nextDouble();
+        if (x == 1) {
+            switch (y) {
+                case 1 :
+                    System.out.println("Результат: ");
+                    System.out.println("Тонны: " + z);
+                    System.out.println("Килограммы: " + (z * 1000));
+                    System.out.println("Граммы: " + (z * 1000000));
+                    break;
+                case 2 :
+                    System.out.println("Результат: ");
+                    System.out.println("Килограммы: " + z);
+                    System.out.println("Тонны: " + (z * 0.001));
+                    System.out.println("Граммы: " + (z * 1000));
+                    break;
+                case 3 :
+                    System.out.println("Результат: ");
+                    System.out.println("Граммы: " + z);
+                    System.out.println("Тонны: " + (z * 0.000001));
+                    System.out.println("Килограммы: " + (z * 0.001));
+                    break;
+            }
+        }
+        else {
+            switch (y) {
+                case 1:
+                    System.out.println("Результат: ");
+                    System.out.println("Метры: " + z);
+                    System.out.println("Мили: " + (z * 0.00062));
+                    System.out.println("Ярды: " + (z * 1.09));
+                    System.out.println("Футы: " + (z * 3.28));
+                    break;
+                case 2:
+                    System.out.println("Результат: ");
+                    System.out.println("Мили: " + z);
+                    System.out.println("Метры: " + (z * 1609.34));
+                    System.out.println("Ярды: " + (z * 1760));
+                    System.out.println("Футы: " + (z * 5280));
+                    break;
+                case 3:
+                    System.out.println("Результат: ");
+                    System.out.println("Ярды: " + z);
+                    System.out.println("Мили: " + (z * 0.00057));
+                    System.out.println("Метры: " + (z * 0.91));
+                    System.out.println("Футы: " + (z * 3));
+                    break;
+                case 4:
+                    System.out.println("Результат: ");
+                    System.out.println("Футы: " + z);
+                    System.out.println("Мили: " + (z * 0.00019));
+                    System.out.println("Ярды: " + (z * 0.33));
+                    System.out.println("Метры: " + (z * 0.3));
+                    break;
+            }
+        }
+
+
+        /* Scanner inDouble = new Scanner(System.in);
         System.out.print("Введите первое число: ");
         double x = inDouble.nextInt();
         System.out.print("Введите второе число: ");
@@ -24,13 +90,7 @@ public class Main {
         }
 
 
-
-
-
-
-
-
-        /* Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("Введите значение x: ");
         double x = in.nextInt();
         System.out.print("Введите значение y: ");
@@ -43,6 +103,7 @@ public class Main {
         int b = (int) a;
         if (b > 3)
             System.out.println("Программа выполнена корректно");
+
 
        double num1 = 58.1234;
        byte num2 = 127;
