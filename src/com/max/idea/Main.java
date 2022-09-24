@@ -3,7 +3,36 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int[] arrayConst = new int[]{1, 3, 5};
         Scanner in = new Scanner(System.in);
+        System.out.print("Укажите размер массива: ");
+        int len = in.nextInt();
+        int[] array = new int[len];
+        for (int i = 1; i <= array.length; i++) {
+            System.out.print("Введите " + i + "-й элемент массива: ");
+            int element = in.nextInt();
+            array[i - 1] = element;
+        };
+        boolean check = false;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < array.length; j++) {
+                if (arrayConst[i] == array[j]) check = true;
+            }
+            if (check == true) {
+                System.out.println("Данное значение имеется в константах");
+                break;
+            }
+            else continue;
+        }
+    }
+}
+
+
+
+
+
+
+        /*        Scanner in = new Scanner(System.in);
         System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
         int x = in.nextInt();
         if (x == 1)
@@ -69,7 +98,9 @@ public class Main {
         }
 
 
-        /* Scanner inDouble = new Scanner(System.in);
+
+
+        Scanner inDouble = new Scanner(System.in);
         System.out.print("Введите первое число: ");
         double x = inDouble.nextInt();
         System.out.print("Введите второе число: ");
@@ -90,6 +121,9 @@ public class Main {
         }
 
 
+
+
+
         Scanner in = new Scanner(System.in);
         System.out.print("Введите значение x: ");
         double x = in.nextInt();
@@ -105,6 +139,9 @@ public class Main {
             System.out.println("Программа выполнена корректно");
 
 
+
+
+
        double num1 = 58.1234;
        byte num2 = 127;
        int[] myArray = {1,3,5,7,9};
@@ -113,5 +150,4 @@ public class Main {
        myArray[0] = numArray;
        System.out.println("Сумма первого и среднего элементов = " + (myArray[0] + myArray[myArray.length-3]));
        System.out.println("Hello World!"); */
-    }
-}
+
