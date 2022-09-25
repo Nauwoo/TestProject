@@ -1,9 +1,40 @@
 package com.max.idea;
 import java.util.Scanner;
+import java.math.*;
 
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Укажите размер массива: ");
+        int len = in.nextInt();
+        double[] array = new double[len];
+        for (int i = 1; i <= array.length; i++) {
+            System.out.print("Введите " + i + "-й элемент массива: ");
+            double element = in.nextDouble();
+            array[i - 1] = element;
+        }
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        sum = sum / array.length;
+        System.out.print("Новый массив [ ");
+        for (int i =0; i < array.length; i++) {
+            System.out.print(array[i] * sum + " ");
+        }
+        System.out.print("]");
+    }
+}
+
+
+
+
+
+
+
+
+
+ /*       Scanner in = new Scanner(System.in);
         System.out.print("Введите целое положительное число: ");
         int n = in.nextInt();
         int sum = 0;
@@ -23,7 +54,7 @@ public class Main {
 
 
 
- /*       int[] arrayConst = new int[]{1, 3, 5};
+        int[] arrayConst = new int[]{1, 3, 5};
         Scanner in = new Scanner(System.in);
         System.out.print("Укажите размер массива: ");
         int len = in.nextInt();
