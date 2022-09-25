@@ -3,7 +3,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arrayConst = new int[]{1, 3, 5};
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите целое положительное число: ");
+        int n = in.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 1) {
+                sum += i;
+            }
+        }
+        System.out.print("Сумма нечетных чисел до введенного: " + sum);
+    }
+}
+
+
+
+
+
+
+
+
+ /*       int[] arrayConst = new int[]{1, 3, 5};
         Scanner in = new Scanner(System.in);
         System.out.print("Укажите размер массива: ");
         int len = in.nextInt();
@@ -32,7 +52,7 @@ public class Main {
 
 
 
-        /*        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
         int x = in.nextInt();
         if (x == 1)
