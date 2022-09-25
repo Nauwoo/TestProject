@@ -5,6 +5,33 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Задайте количество строк: ");
+        int rows = in.nextInt();
+        System.out.print("Задайте количество столбцов: ");
+        int cols = in.nextInt();
+        int [][] array = new int[rows][cols];
+        for (int i = 0; i < rows; i++){
+            System.out.println("Введите элементы " + (i + 1) + "-й строки: ");
+            for (int j = 0; j < cols; j++){
+                System.out.print((j + 1) + "-й: ");
+                int x = in.nextInt();
+                array[i][j] = x;
+            }
+        }
+        System.out.print("Первая строка матрицы (элементы * 3): ");
+        for (int i = 0; i < cols; i++){
+            System.out.print(array[0][i] * 3 + " ");
+        }
+    }
+}
+
+
+
+
+
+
+
+ /*       Scanner in = new Scanner(System.in);
         System.out.print("Укажите размер массива: ");
         int len = in.nextInt();
         double[] array = new double[len];
@@ -34,7 +61,7 @@ public class Main {
 
 
 
- /*       Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("Введите целое положительное число: ");
         int n = in.nextInt();
         int sum = 0;
