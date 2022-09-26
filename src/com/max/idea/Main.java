@@ -5,6 +5,26 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print ("Введите первое число: ");
+        String strNum = in.nextLine();
+        System.out.print ("Введите второе число: ");
+        int intNum = in.nextInt();
+        int strToIntNum = Integer.valueOf(strNum);
+        double doubleNum;
+        if (intNum > strToIntNum) {
+            System.out.print ("Большее число: " + intNum + "  Меньшее число: " + ((double) strToIntNum));
+        }
+        else {
+            System.out.print ("Большее число: " + strToIntNum + "  Меньшее число: " + ((double) intNum));
+        }
+    }
+}
+
+
+
+
+
+/*      Scanner in = new Scanner(System.in);
         System.out.print("Задайте количество строк: ");
         int rows = in.nextInt();
         System.out.print("Задайте количество столбцов: ");
@@ -31,7 +51,7 @@ public class Main {
 
 
 
- /*       Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("Укажите размер массива: ");
         int len = in.nextInt();
         double[] array = new double[len];
