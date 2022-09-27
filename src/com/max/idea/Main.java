@@ -5,6 +5,25 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print ("Введите строку из слов, разделенных пробелами: ");
+        String text = in.nextLine();
+        String[] array = text.split(" ");
+        int count = 0;
+        for (int i = 0; i < array.length; i++){
+            if (array[i].matches("^[a-zA-Z]+$")) {
+                System.out.println (array[i]);
+                count += 1;
+            }
+        }
+        System.out.print ("Количество слов на латинице: " + count);
+    }
+}
+
+
+
+
+
+/*        Scanner in = new Scanner(System.in);
         System.out.print ("Введите текст: ");
         String text = in.nextLine();
         int i = 0;
@@ -38,7 +57,7 @@ public class Main {
 
 
 
-        /*        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print ("Введите первое число: ");
         String strNum = in.nextLine();
         System.out.print ("Введите второе число: ");
