@@ -1,10 +1,35 @@
 package com.max.idea;
+import java.sql.Array;
+import java.util.Random;
 import java.util.Scanner;
 import java.math.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Random random = new Random();
+        int[] array = new int[15];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (random.nextInt(41) - 20);
+        }
+        int maxNum = array[0];
+        int minNum = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > maxNum) maxNum = array[i];
+            if (array[i] < minNum) minNum = array[i];
+        }
+        System.out.println ("Максимальный элемент массива: " + maxNum);
+        System.out.println ("Минимальный элемент массива: " + minNum);
+        System.out.println ("Наибольшее из них по модулю: " + (Math.max(Math.abs(maxNum), Math.abs(minNum))));
+    }
+}
+
+
+
+
+
+
+
+        /*        Scanner in = new Scanner(System.in);
         System.out.print ("Введите строку из слов, разделенных пробелами: ");
         String text = in.nextLine();
         String[] array = text.split(" ");
@@ -23,7 +48,7 @@ public class Main {
 
 
 
-/*        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print ("Введите текст: ");
         String text = in.nextLine();
         int i = 0;
