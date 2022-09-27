@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3c4c5d3-1ad2-43e5-82de-5f7ea00538d4" name="Changes" comment="eleventh commit">
+    <list default="true" id="a3c4c5d3-1ad2-43e5-82de-5f7ea00538d4" name="Changes" comment="twelfth commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestProject/com/max/idea/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestProject/com/max/idea/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/max/idea/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/max/idea/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664107301825</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="twelfth commit">
+      <created>1664205938677</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664205938677</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +165,8 @@
     <MESSAGE value="ninth commit" />
     <MESSAGE value="tenth commit" />
     <MESSAGE value="eleventh commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="eleventh commit" />
+    <MESSAGE value="twelfth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="twelfth commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

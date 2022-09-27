@@ -5,6 +5,40 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print ("Введите текст: ");
+        String text = in.nextLine();
+        int i = 0;
+        if (text.contains("Java")) {
+            System.out.println ("Строка \"" + text + "\" содержит подстроку \"Java\"");
+            i+=1;
+        }
+        else System.out.println ("Строка \"" + text + "\" не содержит подстроку \"Java\"");
+        if (text.startsWith("I like")) {
+            System.out.println ("Строка \"" + text + "\" начинается с подстроки \"I like\"");
+            i+=1;
+        }
+        else System.out.println ("Строка \"" + text + "\" не начинается с подстроки \"I like\"");
+        if (text.endsWith("!!!")) {
+            System.out.println ("Строка \"" + text + "\" заканчивается подстановкой \"!!!\"");
+            i+=1;
+        }
+        else System.out.println ("Строка \"" + text + "\" не заканчивается подстановкой \"!!!\"");
+        if (i == 3) {
+            System.out.println (text.toUpperCase());
+            text = text.substring(7 ,11);
+            System.out.println (text.replace('a', 'o'));
+        }
+
+    }
+}
+
+
+
+
+
+
+
+        /*        Scanner in = new Scanner(System.in);
         System.out.print ("Введите первое число: ");
         String strNum = in.nextLine();
         System.out.print ("Введите второе число: ");
@@ -24,7 +58,7 @@ public class Main {
 
 
 
-/*      Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("Задайте количество строк: ");
         int rows = in.nextInt();
         System.out.print("Задайте количество столбцов: ");
