@@ -7,38 +7,29 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Ввод: ");
-        String text = in.nextLine();
-        char[] test = text.toCharArray();
-        int result = 0;
-        for (int i = 0; i < test.length; i++) {
-            if (Character.isLetter(test[i])) {
-                if (test[1] == '+') {
-                    switch (i) {
-                        case 0:
-                            result += Character.getNumericValue(test[4]) - Character.getNumericValue(test[2]); break;
-                        case 2:
-                            result += Character.getNumericValue(test[4]) - Character.getNumericValue(test[0]); break;
-                        case 4:
-                            result += Character.getNumericValue(test[0]) + Character.getNumericValue(test[2]); break;
-                        default:
-                            System.out.print("Что-то не так"); break;
-                    }
-                } else if (test[1] == '-') {
-                    switch (i) {
-                        case 0:
-                            result += Character.getNumericValue(test[4]) + Character.getNumericValue(test[2]); break;
-                        case 2:
-                            result += Character.getNumericValue(test[0]) - Character.getNumericValue(test[4]); break;
-                        case 4:
-                            result += Character.getNumericValue(test[0]) - Character.getNumericValue(test[2]); break;
-                        default:
-                            System.out.print("Что-то не так"); break;
-                    }
+        System.out.print("Укажите количество строк: ");
+        int count = in.nextInt();
+        String[] stringArray = new String[count];
+        Scanner inLine = new Scanner(System.in);
+        for (int i = 1; i <= count; i++){
+           System.out.print("Введите строку " + i + ": ");
+           stringArray[i-1] = inLine.nextLine();
+        }
+        int max = 0;
+        String temp2 = "";
+        for (int i = 0; i < stringArray.length; i++){
+            int countOfUniqueChars = stringArray[i].length();
+            for (int j = 0; j < stringArray[i].length(); j++){
+                if (j != stringArray[i].indexOf(stringArray[i].charAt(j))){
+                    countOfUniqueChars--;
                 }
             }
+           if (countOfUniqueChars > max) {
+               max = countOfUniqueChars;
+               temp2 = stringArray[i];
+           }
         }
-        System.out.print("Вывод: " + result);
+        System.out.print("Ответ: " + temp2);
     }
 }
 
